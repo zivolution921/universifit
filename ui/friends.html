@@ -1,0 +1,427 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A layout example that shows off a responsive pricing table.">
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+
+    <title>UNIVERSIFIT - Social Fitness - No One Left Behind</title>
+
+    <link rel="stylesheet" href="css/pure.css">
+    <link rel="stylesheet" href="css/modal.css">
+    <link rel="stylesheet" href="style.css"></head>
+
+
+<!--[if lte IE 8]>
+  
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/grids-responsive-old-ie-min.css">
+  
+    <![endif]-->
+    <!--[if gt IE 8]><!-->
+
+    <link rel="stylesheet" href="css/grids-responsive.css">
+
+    <!--<![endif]-->
+
+
+    <!--[if lte IE 8]>
+        <link rel="stylesheet" href="css/layouts/pricing-old-ie.css">
+        <![endif]-->
+        <!--[if gt IE 8]><!-->
+        <link rel="stylesheet" href="css/sf.css">
+        <!--<![endif]-->
+
+    </head>
+    <body>
+
+
+
+<div class="l-content">
+    <div class="pricing-tables pure-g">
+        <div class="pure-u-1 pure-u-md-5-24">
+            <div class="l-menu dblue brick">
+                <a class="pm" href="index.html">
+                  <img src="img/logo.png" style="max-width:280px;width:100%;height:auto;" class="cntr"></a>
+            </div>
+
+        </div>
+        <div class="pure-u-1 pure-u-md-19-24">
+            <div class="l-menu mblue brick lbtxt" style="min-height:37px;" id="search">
+                
+            <input type="text" autofocus="" placeholder="Search for Users/Trainers/Gyms/Events near you" role="search" id="search-input">
+            <label class="ui_search" for="search-input"></label>
+
+            </div>
+
+
+        </div>
+    </div> <!-- end pricing-tables -->
+</div>
+
+<!-- end first block -->
+
+
+
+
+
+
+
+
+
+<div class="l-content">
+    <div class="pricing-tables pure-g" id="whole">
+
+        <div class="pure-u-1 pure-u-md-5-24" style="height:100%;">
+            <div class="l-menu ccc" style="min-height:140px;position:relative;">
+               <a data-toggle="modal" role="button" href="#myModal">
+               <img src="img/profilepic.png" style="max-width:150px;width:100%;height:auto;" class="cntr"></a>
+            </div>
+            <div class="l-menu brick f9f" style="min-height:37px;position:relative;">
+              <span class="cntr aa mgry">
+                Display Name
+              </span>
+            </div>
+
+      <div class="pure-menu pure-menu-open">
+          <ul>
+              <li><a class="pm" data-toggle="modal" role="button" href="#messages"><span class="i-comment fs20"></span> &nbsp; <span class="abs">Messages</span>  <div class="menu-box-number">8</div> </a></li>
+              <li><a class="pm" data-toggle="modal" role="button" href="#challenges"><span class="i-lightning fs20"></span> &nbsp; <span class="abs">Challenges</span> <div class="menu-box-number">1</div> </a></li>
+              <li><a class="pm" data-toggle="modal" role="button" href="#events"><span class="i-groups fs20"></span> &nbsp; <span class="abs">Events</span>  <div class="menu-box-number">2</div> </a></li>
+              <li><a class="pm" href="settings.html"><span class="i-cog fs20"></span> &nbsp; <span class="abs">Settings</span></a></li>
+              <li><a class="pm" href="activities.html"><span class="i-activities fs20"></span> &nbsp; <span class="abs">My Activities</span></a></li>
+              <li><a class="pm" href="groups.html"><span class="i-users fs20"></span> &nbsp; <span class="abs">Groups</span></a></li>
+              <li><a class="pm" href="friends.html"><span class="i-user fs20"></span> &nbsp; <span class="abs">Friends</span></a></li>                    
+          </ul>
+      </div>
+            <div class="pure-g">
+                <div class="pure-u-1-2 g128"> 
+                    <span class="i-trainer fs3"></span>
+                    <h4 class="information-head">Trainers</h4>
+                </div>
+                <div class="pure-u-1-2 g128"> 
+                    <span class="i-gym fs3"></span>
+                    <h4 class="information-head">Gyms</h4>
+                </div>
+            </div>
+            &nbsp;<BR/>&nbsp;<BR/>
+        </div>
+        <!-- end 5-24 -->
+
+        <div class="pure-u-1 pure-u-md-19-24 f2f">
+&nbsp;<BR/>
+            <span id="feed-head"> <span class="i-cog fs16"></span> &nbsp; My Friends:</span>
+&nbsp;<BR/>
+&nbsp;<BR/>
+
+            <div class="pure-g bs" id="eights">
+                <div class="pure-u-lg-1-8 lo"> 
+                    <h5 class="information-head">Display Name</h5>
+                    <a href="#"><img src="img/feed-profile.png"></a>
+                    </div>
+                <div class="pure-u-lg-1-8"> 
+                    <h5 class="information-head">Display Name</h5>
+                    <a href="#"><img src="img/feed-profile.png"></a>
+                    </div>
+                <div class="pure-u-lg-1-8"> 
+                    <h5 class="information-head">Display Name</h5>
+                    <a href="#"><img src="img/feed-profile.png"></a>
+                    </div>
+                <div class="pure-u-lg-1-8"> 
+                    <h5 class="information-head">Display Name</h5>
+                    <a href="#"><img src="img/feed-profile.png"></a>
+                    </div>
+                 <div class="pure-u-lg-1-8"> 
+                    <h5 class="information-head">Display Name</h5>
+                    <a href="#"><img src="img/feed-profile.png"></a>
+                    </div>
+                <div class="pure-u-lg-1-8"> 
+                    <h5 class="information-head">Display Name</h5>
+                    <a href="#"><img src="img/feed-profile.png"></a>
+                    </div>
+                <div class="pure-u-lg-1-8"> 
+                    <h5 class="information-head">Display Name</h5>
+                    <a href="#"><img src="img/feed-profile.png"></a>
+                    </div>
+                <div class="pure-u-lg-1-8"> 
+                    <h5 class="information-head">Display Name</h5>
+                    <a href="#"><img src="img/feed-profile.png"></a>
+                </div>
+            </div>
+
+
+
+
+            <div class="pure-u" id="myfeed">
+   
+
+                 <div class="pure-u-lg-8-8"> 
+                  &nbsp;<BR/>
+                  &nbsp;<BR/>
+
+                </div> 
+
+
+
+            </div>            
+
+        </div>
+    <!-- end 19-24 -->
+    </div> <!-- end pricing-tables -->
+</div> <!-- end l-content -->
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="footer l-box">
+    <p>
+        <h5>Copyright 2015 - Universifit.</h5>.
+    </p>
+</div>
+
+
+
+
+<!-- Modal -->
+<!--
+ * Bootstrap v2.3.2
+ *
+ * Copyright 2012 Twitter, Inc
+ * Licensed under the Apache License v2.0
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Designed and built with all the love in the world @twitter by @mdo and @fat.
+ -->
+<div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-header">
+        <h4 class="be" id="myModalLabel">Profile Picture</h4>
+    </div>
+
+    <div class="modal-body">
+        <div style="min-height:500px;position:relative;" class="l-menu ccc">
+               <img class="cntr" style="max-width:400px;width:100%;height:auto;" src="img/big-profile.png">
+        </div>
+
+        <h4>
+            Profile picture description in as many words as needed (maybe 140 character limit, on second thought).
+        </h4>
+
+                  <div class="feedfoot">
+                    <a href="#" class="comment"><span class="i-comment fs16"></span>&nbsp;<span>Comment</span></a> <a href="#" class="like"><span class="i-like fs16"></span>&nbsp;<span>Like</span></a>
+                  </div>
+    </div>
+
+    <div class="modal-footer">
+        <button class="pure-button" data-dismiss="modal" aria-hidden="true">Close</button>
+    </div>
+</div>
+
+<!-- Local Event -->
+<div id="localevent" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-header">
+        <h4 class="be" id="myModalLabel">Local Event</h4>
+    </div>
+
+    <div class="modal-body">
+        <div style="min-height:500px;position:relative;text-align:center;" class="l-menu ccc">
+          &nbsp;<BR/>&nbsp;<BR/>
+            <span class="i-groups fs5"></span>
+          &nbsp;<BR/>&nbsp;<BR/>
+                    <hr>
+                    <h1 class="be">Event Name</h1>
+                    <hr>
+                    <h5 class="be">Description in here.</h5>          
+        </div>
+
+                    <hr>
+                    <h5 class="be">Time / Date / Location</h5>
+                     <hr>
+                    <h6 class="be">Event Creator Username</h6>       
+
+                  <div class="feedfoot">
+                    <a href="#" class="comment"><span class="i-comment fs16"></span>&nbsp;<span>Comment</span></a> <a href="#" class="like"><span class="i-like fs16"></span>&nbsp;<span>Like</span></a>
+                  </div>
+    </div>
+
+    <div class="modal-footer">
+      <a class="pure-button pure-button-primary" href="#"> Join</a>
+        <button class="pure-button" data-dismiss="modal" aria-hidden="true">Close</button>
+    </div>
+</div>
+
+<!-- Local Challenge -->
+<div id="localchallenge" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-header">
+        <h4 class="be" id="myModalLabel">Local Challenge</h4>
+    </div>
+
+    <div class="modal-body">
+        <div style="min-height:500px;position:relative;text-align:center;" class="l-menu ccc">
+          &nbsp;<BR/>&nbsp;<BR/>
+            <span class="i-groups fs5"></span>
+          &nbsp;<BR/>&nbsp;<BR/>
+                    <hr>
+                    <h1 class="be">The Challenge</h1> 
+                    <hr>
+                    <h5 class="be">Description in here.</h5>           
+        </div>
+
+                    <hr>
+                    <h5 class="be">Time / Date / Location</h5>
+                     <hr>
+                    <h6 class="be">Challenge issued by username</h6>       
+
+                  <div class="feedfoot">
+                    <a href="#" class="comment"><span class="i-comment fs16"></span>&nbsp;<span>Comment</span></a> <a href="#" class="like"><span class="i-like fs16"></span>&nbsp;<span>Like</span></a>
+                  </div>
+    </div>
+
+    <div class="modal-footer">
+      <a class="pure-button pure-button-primary" href="#"> Accept</a>
+        <button class="pure-button" data-dismiss="modal" aria-hidden="true">Close</button>
+    </div>
+</div>
+
+<!-- MESSAGES -->
+<div id="messages" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-header">
+        <h4 class="be" id="myModalLabel">Your Messages</h4>
+    </div>
+
+    <div class="modal-body">
+
+        <ul>
+            <li> <h5><span class="i-right fs20"></span> &nbsp; Message from Username 001 - Hello...</h5>
+                 <div class="feedfoot">
+                    <a href="#" class="comment"><span class="i-comment fs16"></span>&nbsp;<span>Reply</span></a>
+                  </div>
+            </li>
+            <li> <h5><span class="i-right fs20"></span> &nbsp; Message from Username 002 - Hello...</h5>
+                 <div class="feedfoot">
+                    <a href="#" class="comment"><span class="i-comment fs16"></span>&nbsp;<span>Reply</span></a>
+                  </div>
+            </li>
+            <li> <h5><span class="i-right fs20"></span> &nbsp; Message from Username 003 - Hello...</h5>
+                 <div class="feedfoot">
+                    <a href="#" class="comment"><span class="i-comment fs16"></span>&nbsp;<span>Reply</span></a>
+                  </div>
+            </li>
+            <li> <h5><span class="i-right fs20"></span> &nbsp; Message from Username 004 - Hello...</h5>
+                 <div class="feedfoot">
+                    <a href="#" class="comment"><span class="i-comment fs16"></span>&nbsp;<span>Reply</span></a>
+                  </div>
+            </li>
+            <li> <h5><span class="i-right fs20"></span> &nbsp; Message from Username 005 - Hello...</h5>
+                 <div class="feedfoot">
+                    <a href="#" class="comment"><span class="i-comment fs16"></span>&nbsp;<span>Reply</span></a>
+                  </div>
+            </li>
+            <li> <h5><span class="i-right fs20"></span> &nbsp; Message from Username 006 - Hello...</h5>
+                 <div class="feedfoot">
+                    <a href="#" class="comment"><span class="i-comment fs16"></span>&nbsp;<span>Reply</span></a>
+                  </div>
+            </li>
+            <li> <h5><span class="i-right fs20"></span> &nbsp; Message from Username 007 - Hello...</h5>
+                 <div class="feedfoot">
+                    <a href="#" class="comment"><span class="i-comment fs16"></span>&nbsp;<span>Reply</span></a>
+                  </div>
+            </li>
+            <li> <h5><span class="i-right fs20"></span> &nbsp; Message from Username 008 - Hello...</h5>
+                 <div class="feedfoot">
+                    <a href="#" class="comment"><span class="i-comment fs16"></span>&nbsp;<span>Reply</span></a>
+                  </div>
+            </li>                                                                                           
+        </ul>
+
+    </div>
+
+
+    <div class="modal-footer">
+        <button class="pure-button" data-dismiss="modal" aria-hidden="true">Close</button>
+    </div>
+</div>
+
+
+
+<!-- CHALLENGES -->
+<div id="challenges" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-header">
+        <h4 class="be" id="myModalLabel">Your Challenges</h4>
+    </div>
+
+    <div class="modal-body">
+
+        <ul>
+            <li> <h5><span class="i-lightning fs20"></span> &nbsp; Challenge from Username 001 - Description of challenge</h5>
+                 <div class="challengefoot">
+                    <a href="#" class="button-success pure-button">Approve</a> <a href="#" class="button-error pure-button">Reject</a> 
+                  </div>
+            </li>
+                                                                                         
+        </ul>
+
+    </div>
+
+
+    <div class="modal-footer">
+        <button class="pure-button" data-dismiss="modal" aria-hidden="true">Close</button>
+    </div>
+</div>
+
+
+<!-- EVENTS -->
+<div id="events" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-header">
+        <h4 class="be" id="myModalLabel">Events</h4>
+    </div>
+
+    <div class="modal-body">
+
+        <ul>
+            <li> <h5><span class="i-right fs20"></span> &nbsp; Event Invitation from Username 001 - Location / Time / Date</h5>
+                 <div class="feedfoot">
+                    <a href="#" class="comment"><span class="i-comment fs16"></span>&nbsp;<span>Reply</span></a>
+                  </div>
+            </li>
+            <li> <h5><span class="i-right fs20"></span> &nbsp; Event Invitation from Username 002 - Location / Time / Date</h5>
+                 <div class="feedfoot">
+                    <a href="#" class="comment"><span class="i-comment fs16"></span>&nbsp;<span>Reply</span></a>
+                  </div>
+            </li>
+            <li> <h5><span class="i-right fs20"></span> &nbsp; Event Invitation from Username 003 - Location / Time / Date</h5>
+                 <div class="feedfoot">
+                    <a href="#" class="comment"><span class="i-comment fs16"></span>&nbsp;<span>Reply</span></a>
+                  </div>
+            </li>
+                                                                                          
+        </ul>
+
+    </div>
+
+    <div class="modal-footer">
+        <button class="pure-button" data-dismiss="modal" aria-hidden="true">Close</button>
+    </div>
+</div>
+
+
+
+
+
+
+<script src="js/bootstrap.min.js"></script>
+
+                                                                    </body>
+                                                                    </html>
+
+

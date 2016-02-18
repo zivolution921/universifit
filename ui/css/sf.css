@@ -1,0 +1,903 @@
+/*
+ * -- BASE STYLES --
+ * Most of these are inherited from Base, but I want to change a few.
+ */
+body {
+    color: #FFF;
+}
+
+h2, h3 {
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+p {
+    line-height: 1.6em;
+}
+
+
+/*
+ * -- Layout Styles --
+ */
+.l-content {
+    margin: 0;
+    text-align: left;
+}
+
+.l-box {
+    padding: 0.5em 2em;
+}
+
+.aa {
+  color: inherit;
+  font-family: "Archivo Narrow","Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 1.2em;
+  font-weight: 700;
+  letter-spacing: 1px;
+  line-height: 3.5em;
+  white-space: nowrap;
+}
+.mgry{
+    color: #666666;
+}
+.f2f{
+    background-color: #F2F2F2;
+}
+.lo{
+    background-color: #FBD279 !important;
+}
+.db{
+    background-color: #0054A8;
+}
+
+/*
+ * -- S E A R C H --
+ */
+
+#search input {
+  color: #fff;
+  font-size: 2.15em;
+  padding: 0.85em 0 0.75em 1.5em;
+}
+#search input {
+  background: inherit;
+  border: 0 none;
+  font-size: 1.6em;
+  outline: medium none;
+  padding: 9px 0 9px 2.25em;
+  width: 90%;
+}
+
+#search .ui_search::before {
+  font-size: 0.75em;
+  left: 10%;
+  position: relative;
+  top: 50%;
+}
+
+.ui_search::before {
+  content: "";
+}
+.ui_search::before {
+  content: "";
+  font-size: 2em;
+}
+[class*="ui_"]::before, [data-icon]::before, [class*="ui_"]::after, [data-icon]::after {
+  font-family: "ufit";
+  font-size: 1.3em;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  line-height: 1;
+  position: relative;
+  text-transform: none;
+  top: -1px;
+  vertical-align: middle;
+}
+
+[class*="ui_"]::before, [data-icon]::before, [class*="ui_"]::after, [data-icon]::after {
+  font-family: "ufit";
+  font-size: 1.3em;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  line-height: 1;
+  position: relative;
+  text-transform: none;
+  top: -1px;
+  vertical-align: middle;
+}
+
+#search label[for="search-input"] {
+  height: 83px;
+}
+
+#search label[for="search-input"] {
+  cursor: pointer;
+  display: block;
+  height: 45px;
+  position: absolute;
+  top: 0;
+  transition: opacity 0.3s ease 0s;
+  width: 3.5em;
+}
+
+#search .ui_search {
+  font-size: 2.5714em;
+  top: 25%;
+}
+
+/*
+ * -- MENU STYLES --
+ * Make the menu have a very faint box-shadow.
+ */
+.pure-menu {
+   
+}
+
+.pure-menu li a {
+    font-family: 'Archivo Narrow', "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+#eights {
+    cursor: pointer;
+    position: relative;display: block;}
+#eights div {
+  padding: 0 0rem 1.25rem;
+  text-align: center;
+}
+
+#eights div:nth-child(odd) {
+  background: #F2F2F2;
+}
+
+#eights div:nth-child(even) {
+  background: #FAFAFA;
+}
+#eights div:hover{
+    background-color: #006ef9;
+}
+#eights div:hover .fs4{
+    color: #FFF;
+}
+#eights div:hover .information-head {
+  color: #FFF;
+}
+#eights div img{
+    border: 1px solid #CCCCCC;
+    display: inline-block;
+    position: relative;
+    margin:14px;
+    max-width:82px;width:100%;height:auto;
+}
+#cal{
+-webkit-box-shadow: inset 0px -5px 20px -10px rgba(0,0,0,0.5);
+-moz-box-shadow: inset 0px -5px 20px -10px rgba(0,0,0,0.5);
+box-shadow: inset 0px -5px 20px -10px rgba(0,0,0,0.5);
+}
+#cal a {
+  color: #444;
+  display: block;
+  font-size: .9em;
+  font-weight: 700;
+  line-height: 1.3em;
+  padding: 15px 0 10px 32px;
+  text-align: left;
+  text-decoration: none;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+#featured hr {
+ border: 0; height: 0; border-top: 1px solid rgba(0, 0, 0, 0.1); border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  width: 30%;
+}
+#featured a{
+  text-decoration: none;
+}
+#localevent hr {
+ border: 0; height: 0; border-top: 1px solid rgba(0, 0, 0, 0.1); border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  width: 100%;
+}
+#localchallenge hr {
+ border: 0; height: 0; border-top: 1px solid rgba(0, 0, 0, 0.1); border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  width: 100%;
+}
+#messages hr {
+ border: 0; height: 0; border-top: 1px solid rgba(0, 0, 0, 0.1); border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  width: 100%;
+}
+#messages > ul {
+  left: 0;
+  top: 0;
+  visibility: visible;
+}
+#messages > ul {
+  position: relative;
+}
+#messages ul {
+  left: -10000px;
+  list-style: outside none none;
+  margin: 0;
+  padding: 0;
+  top: -10000px;
+  z-index: 1;
+}
+#messages > ul {
+  visibility: visible;
+  list-style: outside none none;
+}
+#messages li {
+   padding: 16px;
+   display: block;
+   position: relative;
+   border-bottom: 1px solid #eee;
+}
+#messages a{
+  text-decoration: none;
+}
+#messages li:nth-child(odd) {
+  background: #FFF;
+}
+
+#messages li:nth-child(even) {
+  background: #FAFAFA;
+}
+#messages li:hover {
+  background: #EEE;
+}
+
+#challenges hr {
+ border: 0; height: 0; border-top: 1px solid rgba(0, 0, 0, 0.1); border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  width: 100%;
+}
+#challenges > ul {
+  left: 0;
+  top: 0;
+  visibility: visible;
+}
+#challenges > ul {
+  position: relative;
+}
+#challenges ul {
+  left: -10000px;
+  list-style: outside none none;
+  margin: 0;
+  padding: 0;
+  top: -10000px;
+  z-index: 1;
+}
+#challenges > ul {
+  visibility: visible;
+  list-style: outside none none;
+}
+#challenges li {
+  border-bottom: 1px solid #eee;
+  display: block;
+  padding: 0 12px 24px;
+  position: relative;
+}
+#challenges a{
+  text-decoration: none;
+}
+#challenges li:nth-child(odd) {
+  background: #FFF;
+}
+
+#challenges li:nth-child(even) {
+  background: #FAFAFA;
+}
+.challengefoot {
+  bottom: 8px;
+  display: inline-block !important;
+  height: 28px !important;
+  padding-right: 0;
+  position: absolute !important;
+  right: 0;
+  text-align: right;
+  width: 100%;
+}
+.challengefoot .pure-button {
+  padding: 0.5em 1.25em;
+}
+
+        .button-success {
+          color: #FFF !important;
+            background: rgb(28, 184, 65); /* this is a green */
+        }
+
+        .button-error {
+          color: #FFF !important;
+            background: rgb(202, 60, 60); /* this is a maroon */
+        }
+
+#events hr {
+ border: 0; height: 0; border-top: 1px solid rgba(0, 0, 0, 0.1); border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  width: 100%;
+}
+#events > ul {
+  left: 0;
+  top: 0;
+  visibility: visible;
+}
+#events > ul {
+  position: relative;
+}
+#events ul {
+  left: -10000px;
+  list-style: outside none none;
+  margin: 0;
+  padding: 0;
+  top: -10000px;
+  z-index: 1;
+}
+#events > ul {
+  visibility: visible;
+  list-style: outside none none;
+}
+#events li {
+   padding: 16px;
+   display: block;
+   position: relative;
+   border-bottom: 1px solid #A4CEFA;
+}
+#events a{
+  text-decoration: none;
+}
+#events li:nth-child(odd) {
+  background: #FFF;
+}
+
+#events li:nth-child(even) {
+  background: #FAFAFA;
+}
+#events li:hover{
+  background: #A4CEFA;
+}
+
+
+
+.be{
+  color: #555;
+  margin: .25rem 0;
+}
+#myfeed {
+  width: 100%;
+}
+#myfeed div{
+    display: block;
+    height: 112px;
+    position: relative;
+}
+
+#myfeed div img{
+    border: 1px solid #CCCCCC;
+    display: inline-block;
+    position: relative;
+    margin:14px;
+    max-width:82px;width:100%;height:auto;
+}
+#myfeed div p{
+  display: block !important;
+  color: #444;
+  display: inline;
+  font-size: 1.05em;
+  font-weight: 700;
+  letter-spacing: 0;
+  line-height: 1.3em;
+  padding: 0.25rem 0 0.25rem 1.25rem;
+  position: absolute;
+  margin: 0.25rem;
+}
+#myfeed div table{
+  width: 100%;
+}
+
+.fed{
+    position: relative;
+    border-bottom: 1px solid #CCCCCC;
+    padding: 1rem 0;
+    box-shadow: inset -1px 0 0 #ccc;
+}
+.fed:hover{
+    border-color: #006ef9;
+}
+.feedfoot {
+  bottom: 0;
+  display: inline-block !important;
+  height: 28px !important;
+  padding-right: 32px;
+  position: absolute !important;
+  right: 0;
+  text-align: right;
+  width: 100%;
+}
+.feedfoot a{
+    display: inline-block !important;
+    color: #777;
+  font-size: 0.8em;
+  font-weight: 700;
+  letter-spacing: 0;
+  line-height: 1em;
+  text-decoration: none;
+}
+.feedfoot a span{
+    vertical-align: middle;
+}
+.comment:hover{
+    color: #006ef9;
+}
+.like:hover{
+    color: #D54646;
+}
+.bs{
+    margin-bottom: 24px;
+        -webkit-box-shadow: 0 8px 4px -6px rgba(0,0,0,0.2);
+       -moz-box-shadow: 0 8px 4px -6px rgba(0,0,0,0.2);
+            box-shadow: 0 8px 4px -6px rgba(0,0,0,0.2);
+}
+#search h2{
+    margin: 0.4em 0 !important;
+}
+#whole{
+    background-color: #F9F9F9;
+}
+#feed-head {
+  border-bottom: 1px solid #dedede;
+  color: #333;
+  font-size: 0.8em;
+  font-weight: 700;
+  height: 32px;
+  line-height: 1.25em;
+  padding: 0.5rem;
+  text-align: center;
+  width: 100% !important;
+}
+.ava{
+    float:left;display:inline-block;height:100%;
+    width:10%;position:relative;
+}
+.feedview{
+    float:left;display:inline-block;height:100%;
+    width:90%;position:relative;
+}
+.displaynameview {
+  display: inline-block;
+  color: #006EF9;
+  font-size: 0.9em;
+  font-weight: 700;
+  margin: 1rem 0 0.25rem 1.5rem;
+}
+.displaynameview:hover{
+    text-decoration: none;
+}
+.timeview {
+  color: #666;
+  display: inline-block;
+  font-size: 0.7em;
+  margin: 0.75rem 0 0.25rem 1.5rem;
+}
+.dg50{
+    position: relative;
+    background-color: #DDDDDD;
+    height: 50px;
+    box-shadow: inset -2px 0 0 #ccc;
+    text-align: center;
+    vertical-align: middle;
+}
+.dg50:hover{
+    background-color: #CCC;
+}
+
+.w204{
+    cursor: pointer;
+    box-shadow: inset -2px 0 0 #d9d9d9;
+    background-color: #FFF;
+    height: 204px;
+    text-align: center;
+    padding: 1.75rem 0rem 0;
+}
+.w204:hover{
+    background-color: #ebebeb;
+}
+.w204:hover .fs5{
+    color: #fff;
+}
+.g128{
+    cursor: pointer;
+    box-shadow: inset -1px 0 0 #d9d9d9;
+    background-color: #EBEBEB;
+    height: 128px;
+    text-align: center;
+    padding: 1.25rem 0rem 0.25rem;
+}
+.g128:hover{
+    background-color: #f9f9f9;
+    }
+.g128:hover .fs3 {
+  color: #006ef9;
+}   
+.fs1 {
+    color:#006ef9;
+    font-size: 80px;
+}
+.fs3 {
+  color: #666;
+  font-size: 64px;
+}
+.fs4 {
+  color: #000;
+  font-size: 64px;
+}
+.fs5 {
+    color:#EBEBEB;
+    font-size: 96px;
+}
+
+.home-menu ul {
+    float: right;
+}
+
+#week {position: relative;display: block;color:#E8F3FF;}
+#week div {text-align: center;padding: 1.25rem 0rem .25rem;color:#E8F3FF;cursor: pointer;}
+#week h3{
+    color:#E8F3FF;
+font-weight: 500;}
+
+#week div:nth-child(1) {
+background:#002449 !important;}
+
+#week div:nth-child(odd) {
+  background: #0482FF;
+}
+
+#week div:nth-child(even) {
+  background: #006EF9;
+}
+
+#week div:hover {
+  background: #004488;
+}
+.fs2 {
+    color:#E8F3FF;
+    font-size: 80px;
+    cursor: pointer;
+}
+
+
+.ss {
+    font-family: 'Source Sans Pro', "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-shadow: 0 1px 0 #000;
+}
+.ss:hover {
+    text-shadow: 0 1px 0 #FFF;
+}
+
+.an {
+    font-family: 'Archivo Narrow', "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 13px;
+    letter-spacing: 2px;
+    line-height: 43px;
+    text-transform: uppercase;
+}
+
+
+.xtop{
+    background-color: #F2F2F2 !important;
+    color: #333 !important;
+}
+.menu-row li a {
+    border-bottom: 3px solid #c0c0c0;
+    color: #505050;
+    display: inline-block;
+    font-size: 13px;
+    letter-spacing: 2px;
+    line-height: 43px;
+    padding: 0 20px;
+    text-transform: uppercase;
+}
+
+
+
+/* SEPERATISTS */
+
+.leftrailmodule--popular .strapline--leftrail {
+    margin-bottom: 53px;
+}
+.strapline--leftrail {
+    text-align: center;
+}
+.strapline, .strapline a {
+    color: #aaa;
+}
+.strapline {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    height: 9px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    white-space: nowrap;
+}
+.text-micro {
+    font-size: 0.75rem;
+}
+.text-upper {
+    text-transform: uppercase;
+}
+
+
+
+.strapline .strapline-bg {
+    background-color: #f7f7f7;
+    display: inline-block;
+    max-width: 100%;
+    overflow: hidden;
+    padding: 0 5px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.strapline--leftrail .strapline-bg {
+    color: #9a9a9a;
+    font-family: "Source Sans Pro",sans-serif;
+    font-size: 0.8rem;
+    font-weight: 400;
+    letter-spacing: 2px;
+    padding: 0 0.5em;
+}
+
+
+.abs{position:absolute;}
+
+.ribbon {
+    background: none repeat scroll 0 0 #2d3e50;
+    color: #aaa;
+}
+.mblue{background: none repeat scroll 0 0 #0077F2;}
+.dblue{background: none repeat scroll 0 0 #006EF9;}
+.fff{background-color: #FFF;}
+.ccc{background-color: #CCC;}
+.f9f{background-color: #F9F9F9;}
+
+.lbtxt{color: #ADD3FB;}
+
+
+.eventbrdr{
+box-shadow: inset -2px 0 0 #F2F2F2;}
+
+.cntr {
+    position: absolute;
+    text-align: center;    
+    margin: auto;
+    display: block;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 14;
+}
+
+
+.fs20 {
+    font-size: 20px;
+}
+.fs16 {
+    font-size: 16px;
+}
+.l-menu {
+    margin;
+    visibility: visible;
+    width: 100%;
+    z-index: 2;
+}
+
+
+.l-menu ul {
+    font-family: 'Archivo Narrow', "Helvetica Neue", Helvetica, Arial, sans-serif;
+    position: relative;    
+    vertical-align: middle;     
+    white-space: nowrap;    
+    margin: 0;
+    padding: 0 0 0 1em;
+    z-index: 1;
+
+}
+.l-menu li {
+    display: inline-block;
+    list-style: outside none none !important;
+}
+.l-menu li a {
+    display: block;
+    line-height: 1.5em;
+    padding: 15px 20px;
+    font-size: 90%;   
+    color: #005FC2;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.brick {
+    min-height: 37px;
+    max-height: 37px;
+    position: relative;
+    display: block;
+    line-height: 1.5em;
+    padding: 15px 0;
+    font-size: 90%;   
+}
+
+.l-menu li a:hover {
+    color: #A8D3FF;
+}
+
+
+
+/* MAIN MENU STYLING */
+
+.pure-menu.pure-menu-open,
+.pure-menu.pure-menu-horizontal li .pure-menu-children {
+    background: #EBEBEB; /* Old browsers */
+    border: 0px solid #b7b7b7;
+}
+
+
+
+/*
+ * -- PRICING TABLE WRAPPER --
+ * This element wraps up all the pricing table elements
+ */
+ .pricing-tables,
+ .information {
+    max-width: 1440px;
+    margin: 0 auto;
+ }
+.pricing-tables {
+    text-align: left;
+    padding-left: 0;
+}
+
+/*
+ * -- PRICING TABLE  --
+ * Every pricing table has the .pricing-table class
+ */
+.pricing-table {
+    border: 0px solid #ddd;
+    margin: 0 0 2em;
+    padding: 0 0 3em;
+}
+
+/*
+ * -- PRICING TABLE HEADER COLORS --
+ * Choose a different color based on the type of pricing table.
+ */
+.pricing-table-free .pricing-table-header {
+    background: #2B5FCA;
+}
+
+.pricing-table-biz .pricing-table-header {
+    background: #3779D2;
+}
+
+/*
+ * -- PRICING TABLE HEADER --
+ * By default, a header is black/white, and has some styles for its <h2> name.
+ */
+.pricing-table-header {
+    background: #0077F2;
+    color: #fff;
+}
+
+.pricing-table-header h2 {
+    font-size: 1em;
+    font-weight: 600;
+    margin: 0;
+    padding-left: 0.9em;
+    padding-bottom: 1.3em;
+    padding-top: 1.5em;
+}
+
+/*
+ * -- PRICING TABLE PRICE --
+ * Styles for the price and the corresponding <span>per month</span>
+ */
+.pricing-table-price {
+    font-size: 6em;
+    margin: 0.2em 0 0;
+    font-weight: 100;
+}
+    .pricing-table-price span {
+        display: block;
+        text-transform: uppercase;
+        font-size: 0.2em;
+        padding-bottom: 2em;
+        font-weight: 400;
+        color: rgba(255, 255, 255, 0.5);
+        *color: #fff;
+    }
+
+
+
+/*
+ * -- PRICING TABLE LIST --
+ * Each pricing table has a <ul> which is denoted by the .pricing-table-list class
+ */
+.pricing-table-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+}
+
+
+/*
+ * -- PRICING TABLE LIST ELEMENTS --
+ * Styles for the individual list elements within each pricing table
+ */
+.pricing-table-list li {
+    background: none repeat scroll 0 0 #0077f2;
+    border-bottom: 1px solid #D9D9D9;
+    color: #fff;
+    font-weight: 300;
+    padding: 1.3em 0 1.3em 1em;
+}
+
+
+/*
+ * -- PRICING TABLE BUTTON --
+ * Styles for the "Choose" button at the bottom of a pricing table.
+ * This inherits from Pure Button.
+ */
+.button-choose {
+    border: 1px solid #ccc;
+    background: #fff;
+    color: #333;
+    font-weight: bold;
+    position: relative;
+    bottom: -1.5em;
+}
+
+.information-head {
+    font-family: 'Archivo Narrow', "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #444;
+    font-weight: 400;
+}
+
+.footer {
+    background: #ddd;
+    color: #888;
+    text-align: center;
+}
+    .footer a {
+        color: #ddd;
+    }
+
+
+
+/*
+ * -- TABLET MEDIA QUERIES --
+ * On tablets, we want to slightly adjust the size of the banner
+ * text and add some vertical space between the various pricing tables
+ */
+@media(min-width: 767px) {
+
+    .banner-head {
+        font-size: 4em;
+    }
+    .pricing-table {
+        margin-bottom: 0;
+    }
+
+}
+
+/*
+ * -- PHONE MEDIA QUERIES --
+ * On phones, we want to reduce the height and font-size of the banner further
+ */
+@media (min-width: 480px) {
+    .banner {
+        height: 400px;
+    }
+    .banner-head {
+        font-size: 3em;
+    }
+}

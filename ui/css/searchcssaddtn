@@ -1,0 +1,32 @@
+.ui_search::before {
+  content: "";
+}
+.ui_search::before {
+  content: "";
+  font-size: 2em;
+}
+[class*="ui_"]::before, [data-icon]::before, [class*="ui_"]::after, [data-icon]::after {
+  font-family: "ufit";
+  font-size: 1.3em;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  line-height: 1;
+  position: relative;
+  text-transform: none;
+  top: -1px;
+  vertical-align: middle;
+}
+
+[class*="ui_"]::before, [data-icon]::before, [class*="ui_"]::after, [data-icon]::after {
+  font-family: "ufit";
+  font-size: 1.3em;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  line-height: 1;
+  position: relative;
+  text-transform: none;
+  top: -1px;
+  vertical-align: middle;
+}

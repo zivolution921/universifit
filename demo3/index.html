@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<!--[if lt IE 8 ]><html class="no-js ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="no-js ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 8)|!(IE)]><!--><html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+
+   <!--- Basic Page Needs
+   ================================================== -->
+   <meta charset="utf-8">
+	<title>Universifit - Social Fitness, No one left behind</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+   <!-- Mobile Specific Metas
+   ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- Google Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic,600italic,700italic,900italic|Roboto+Condensed:300italic,400italic,700italic,400,300,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Oswald:400,700' rel='stylesheet' type='text/css'>
+
+	<!-- CSS
+    ================================================== -->
+   <link rel="stylesheet" href="css/default.css">
+	<link rel="stylesheet" href="css/layout.css">
+   <link rel="stylesheet" href="css/media-queries.css">
+   <link rel="stylesheet" href="css/magnific-popup.css">
+
+   <!-- Script
+   ================================================== -->
+	<script src="js/modernizr.js"></script>
+      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script src="js/jquery.typer.js"></script>
+<script type="text/javascript" src="js/plax.js"></script>
+
+    <style type="text/css">
+
+      div#shell {
+        display: block;
+        position: relative;
+        margin: 0 auto;
+        width: 100%;
+        height: 740px;
+        cursor: pointer;
+      }
+      div#shell.outline{
+        border: 0px solid #cccbc8;
+      }
+      div#shell{
+        z-index: 1;
+      }
+
+      .grid {
+        background: url("img/grid2.png") repeat scroll 12px 12px rgba(0, 0, 0, 0);
+        cursor: pointer;
+        display: block;
+        margin: 0;
+        min-height: 640px;
+        padding-bottom: 64px;
+        position: relative;
+        width: 100%;
+      }
+
+       img#user {
+        position: absolute;
+        top: 32px;
+        left: 47%;
+        z-index: 6;
+      }
+        img#mshad {
+        position: absolute;
+        top: 0px;
+        left: 46%;
+        z-index: 3;
+      }     
+        img#event {
+        position: absolute;
+        top: 300px;
+        left: 25%;
+        z-index: 6;
+        opacity: .5;
+      }
+        img#user2 {
+        position: absolute;
+        top: 280px;
+        right: 33%;
+        z-index: 6;
+        opacity: .5;
+      }
+        img#trainer {
+        position: absolute;
+        top: 280px;
+        left: 26%;
+        z-index: 6;
+        opacity: .5;
+      }
+
+      .homebox, .longhomebox {
+        display: block;
+        padding: 24px 24px 0;
+        position: relative;
+        width: 100%;
+      }
+      .homebox{margin:32px 0 0;}
+      .longhomebox{margin:480px 0 0;}
+      div#turn {
+        position: absolute;
+        top: 180px;
+        left: 48%;
+        z-index: 4;
+        display: block;      
+        width: 128px;
+        height: 156px; 
+        opacity: 0;
+      }
+      div.ldots {
+        position: absolute;
+        top: 150px;
+        right: 2%;
+        z-index: 3;
+        display: block;      
+        width: 128px;
+        height: 156px; 
+        opacity: 0;
+      }
+       div.rdots {
+        position: absolute;
+        top: 150px;
+        left: 2%;
+        z-index: 3;
+        display: block;      
+        width: 128px;
+        height: 156px; 
+        opacity: 0;
+      }     
+      .lq, .mq, .rq{
+        position: absolute;
+        display: inline-block;
+        width: 33.33%;
+        height: 100%;
+        z-index: 1;
+      }
+
+       .lq{
+        top: 0;
+        left: 0;
+        }  
+       .mq{
+        top: 0;
+        left: 33%;
+        }  
+       .rq{
+        top: 0;
+        left: 66%;
+        }  
+
+      .lq:hover .homebox{
+        outline: 4px solid #EFEFEF;
+        background-color: #FFF;
+      }
+      .mq:hover .longhomebox{
+        outline: 4px solid #EFEFEF;
+        background-color: #FFF;
+      }
+      .rq:hover .homebox{
+        outline: 4px solid #EFEFEF;
+        background-color: #FFF;
+      }
+      .lq:hover p{
+        border:0px !important;
+      }
+      .mq:hover p{
+        border:0px !important;
+      }
+      .rq:hover p{
+        border:0px !important;
+      }
+
+
+
+      .lq:hover .ldots{
+        opacity: 1;
+      }
+      .mq:hover #turn{
+        opacity: 1;
+      }
+      .rq:hover .rdots{
+        opacity: 1;
+      }
+
+      .lq:hover #trainer{
+        opacity: 1;
+      }
+      .mq:hover #event{
+        opacity: 1;
+      }
+      .rq:hover #user2{
+        opacity: 1;
+      }
+
+      .lq:hover .bb{
+        color: #F49F22;
+      }
+      .mq:hover .bb{
+        color: #F49F22;
+      }
+      .rq:hover  .bb{
+        color: #F49F22;
+      }
+
+
+       #event:hover{
+        opacity: 1;
+      }
+      #user2:hover {
+        opacity: 1;
+      }
+      #trainer:hover{
+        opacity: 1;
+      }
+
+
+
+.sk, .sk2, .sk3, .sk4{
+        display: block;  
+  width: 24px;
+  height: 24px;
+  margin: 0 0 8px;
+  background-color: #0A60DC;
+  border-radius: 100%;
+}
+      .sk {
+  -webkit-animation: sk-pulseScaleOut 1s infinite ease-in-out;
+          animation: sk-pulseScaleOut 1s infinite ease-in-out; }
+
+@-webkit-keyframes sk-pulseScaleOut {
+  0% {
+    -webkit-transform: scale(0.1);
+            transform: scale(0.1); }
+
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 0; } }
+
+@keyframes sk-pulseScaleOut {
+  0% {
+    -webkit-transform: scale(0.1);
+            transform: scale(0.1); }
+
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 0; } }
+     
+      .sk2 {
+  -webkit-animation: skScaleOut 1s infinite ease-in-out;
+          animation: skScaleOut 1s infinite ease-in-out; }
+  animation-delay:-0.05s;
+  -webkit-animation-delay:-0.05s; /* Safari 和 Chrome */
+
+@-webkit-keyframes skScaleOut {
+  0% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5); }
+
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 0; } }
+
+@keyframes skScaleOut {
+  0% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5); }
+
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 0; } }
+
+      .sk3 {
+  -webkit-animation: skaScaleOut 1s infinite ease-in-out;
+          animation: skaScaleOut 1s infinite ease-in-out; }
+
+
+@-webkit-keyframes skaScaleOut {
+  0% {
+    -webkit-transform: scale(0.75);
+            transform: scale(0.75); }
+
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 0; } }
+
+@keyframes skaScaleOut {
+  0% {
+    -webkit-transform: scale(0.75);
+            transform: scale(0.75); }
+
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 0; } }   
+      .sk4 {
+  -webkit-animation: skbScaleOut 1s infinite ease-in-out;
+          animation: skbScaleOut 1s infinite ease-in-out; }
+
+
+@-webkit-keyframes skbScaleOut {
+  0% {
+    -webkit-transform: scale(0.25);
+            transform: scale(0.25); }
+
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 0; } }
+
+@keyframes skbScaleOut {
+  0% {
+    -webkit-transform: scale(0.25);
+            transform: scale(0.25); }
+
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 0; } }     
+    </style>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $('#shell img').plaxify()
+        $.plax.enable({ "activityTarget": $('#shell')})
+      })
+    </script>
+        <script type="text/javascript">
+      $(document).ready(function () {
+        $('#shell div').plaxify()
+        $.plax.enable({ "activityTarget": $('#shell')})
+      })
+    </script>
+
+</head>
+
+<body>
+
+   <!-- Header
+   ================================================== -->
+   <header id="home">
+
+
+
+      <div class="row banner">
+         <div id="a1" class="banner-text">
+          <div style="width:100%;max-width:740px;height:500px;margin:0 auto;position:relative;">
+            <div style="width:100%;height:40%;margin:0 auto;position:absolute;display:block;top:0;left:0;">
+              <h1 class="responsive-headline x1"><span class="lb" data-typer-targets="Find, Push, Meet">Find</span>
+               Connect <span data-typer-targets="Team, Grow, Join">Team</span></h1>
+            </div>
+            <a class="lg"></a>
+          </div>
+
+          <div style="width:100%;height:40%;margin:0 auto;position:absolute;display:block;bottom:0;left:0;">
+            <h1 class="responsive-headline x2">Motivate <span data-typer-targets="Inspire, Compete">Compete</span> <span class="lb" data-typer-targets="Challenge, Achieve">Challenge</span></h1>
+            <div class="swl"></div>
+            <BR/>
+                     <a href="#" class="button">Sign Up</a>
+          </div>
+       
+         </div>
+      </div>
+
+
+
+      <p class="scrolldown">
+         <a class="smoothscroll" href="#two"><svg class="arrows">
+              <path class="a1" d="M0 0 L30 32 L60 0"></path>
+              <path class="a2" d="M0 20 L30 52 L60 20"></path>
+            </svg></a>
+      </p>
+
+   </header> <!-- Header End -->
+
+
+
+
+      <!-- About Section
+   ================================================== -->
+   <section id="two" class="whbg">
+<div style="width:100%;position:relative;display:block;margin-bottom: 64px;">
+      <img style="display:block;position:relative;margin:0 auto;" src="img/hline.png">
+    </div>
+
+      <div class="row">
+
+
+    <div id="shell" class="outline">
+
+     <div class="lq">
+      <div class="homebox">
+      <span class="bb">Trainers</span>
+
+         <p>Connect with a fitness professional, you can list your personal goals and Universifit will match you with 
+          trainers who are best qualified to assist you.
+         </p>
+
+      </div>
+      <img src="img/btrainer.png" width="128" height="135" data-xrange="120" data-yrange="120" id="trainer"/>
+      <div class="ldots" data-xrange="80" data-yrange="40">
+        <div class="sk" style="float:right;"></div>
+          <BR/>
+        <div class="sk4" style="float:right;"></div>
+          <BR/>
+        <div class="sk2" style="float:right;"></div>
+      </div>
+     </div>
+
+     <div class="mq">
+      <div class="longhomebox">
+      <span class="bb">Events</span>
+
+         <p>Connect with events, gym's, and group activities that are 
+          available in your area, you can even plan and share your own events.
+
+         </p>
+
+      </div>
+
+      <div id="turn" data-xrange="40" data-yrange="40">
+        <div class="sk"></div>
+        <div class="sk4"></div>
+        <div class="sk2"></div>
+              </div>
+
+        <img src="img/bevent.png" width="160" height="131" data-xrange="160" data-yrange="60" id="event"/>      
+     </div>
+
+     <div class="rq">
+      <div class="homebox">
+      <span class="bb">Partners</span>
+
+         <p>Connect with fitness partners and friends who share your fitness goals, schedule, or interest in activities.
+          Motivate or be motivated by someone local!
+         </p>
+
+      </div>
+         <img src="img/buser.png" width="48" height="126" data-xrange="120" data-yrange="120" id="user2"/>
+
+          <div class="rdots" data-xrange="80" data-yrange="40">
+        <div class="sk" style="float:left;"></div>
+          <BR/>
+        <div class="sk4" style="float:left;"></div>
+          <BR/>
+        <div class="sk2" style="float:left;"></div>
+              </div>    
+     </div>
+
+      <img src="img/buser.png" width="48" height="126" data-xrange="320" data-yrange="80" id="user"/>
+
+
+    </div>
+
+
+
+      </div>
+
+   </section> <!-- About Section End-->
+
+
+
+
+
+   <!-- MAP Section
+   ================================================== -->
+   <section id="map">
+
+      <div class="text-container">
+
+         <div class="row">
+
+
+
+            <div class="ten columns flex-container">
+
+               <div class="flexslider">
+
+                  <ul class="slides">
+
+                     <li>
+
+<img src="img/mapgirl.png" class="m-img">
+      <div class="qbox">
+      <span class="bc">Jessica G. - Trainer</span>
+         <p>Jessica G. is a Crossfit instructor, and is within 5 miles of you.
+         </p>
+      </div>
+
+                     </li> <!-- slide ends -->
+
+                     <li>
+<img src="img/mapguy.png" class="m-img">
+      <div class="qbox">
+      <span class="bc">Henry F. - User</span>
+         <p>Looking for a jogging partner and is within 5 miles of you.
+         </p>
+      </div>
+                     </li> <!-- slide ends -->
+
+                  </ul>
+
+               </div> <!-- div.flexslider ends -->
+
+            </div> <!-- div.flex-container ends -->
+
+         </div> <!-- row ends -->
+
+       </div>  <!-- text-container ends -->
+
+   </section> <!-- map Section End-->
+
+
+
+   <!-- footer
+   ================================================== -->
+   <footer>
+
+      <div class="row">
+
+         <div class="twelve columns">
+
+
+
+            <ul class="copyright">
+               <li>&copy; Copyright 2015 Universifit</li>
+            </ul>
+
+         </div>
+
+
+      </div>
+
+   </footer> <!-- Footer End-->
+
+   <!-- Java Script
+   ================================================== -->
+  <script>
+$('[data-typer-targets]').typer() 
+  </script>
+   <script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
+
+   <script src="js/jquery.flexslider.js"></script>
+   <script src="js/waypoints.js"></script>
+   <script src="js/jquery.fittext.js"></script>
+   <script src="js/magnific-popup.js"></script>
+   <script src="js/doubletaptogo.js"></script>
+   <script src="js/spin.js"></script>
+
+   <script src="js/init.js"></script>
+
+</body>
+
+</html>
